@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" "viewport" content ="width=device-width, user -scaleable=no" />
+	<meta name="description" content="Der Mehrspieler-Modus von Call of Duty®: Black Ops 4 setzt neue Maßstäbe - mit dem packendsten und realistischsten Kampferlebnis, das es je gab und ...">
+	<meta name="keywords" content="Call of Duty, Black Ops 4, Ego-Shooter, Multiplayer, Strategy">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Internet Explorer neuste Renderengine -->
+  <title>Call of Duty Black Ops 4</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/navbar.min.css">
+
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Muss noch geändert werden um offline verfübar zu sein -->
+	<link rel="stylesheet" href="bootstrap/Navbar.min.css">
+	<link rel="stylesheet" href="font-awesome.min.ss">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script scr="js/Script.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<!-- Navigation bar -->
+	<div class="wrapper">
+				<header>
+
+							<nav>
+
+										<div class="menu-icon">
+													<i class="fa fa-bars fa-2x"></i>
+										</div>
+
+										<div class="logo">
+											<img src="media/black-ops-4_logo_klein.png">
+
+
+										</div>
+
+										<div class="menu">
+													<ul>
+																<li><a id = "homelink" href="#home"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Home</a></li>
+																<li><a id = "multiplayerlink" href="#multiplayer"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Multiplayer</a></li>
+																<li><a id = "zombieslink" href="#zombies"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Zombies</a></li>
+																<li><a id = "blackoutlink" href="#blackout"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Blackout</a></li>
+																<li><a id = "buylink" href="#buy"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Buy</a></li>
+													</ul>
+										</div>
+							</nav>
+
+				</header>
+
+
+	</div>
+
+	<script type="text/javascript">
+
+	// Menu-toggle button
+
+	$(document).ready(function() {
+				$(".menu-icon").on("click", function() {
+							$("nav ul").toggleClass("showing");
+				});
+	});
+
+	// Scrolling Effect
+
+	$(window).on("scroll", function() {
+				if($(window).scrollTop()) {
+							$('nav').addClass('black');
+				}
+
+				else {
+							$('nav').removeClass('black');
+				}
+	})
+//Auto Scroll
+$('a[href*="#"]').on('click',function(e) {
+ e.preventDefault();
+ var target = this.hash;
+ var $target = $(target);
+ $('html, body').stop().animate({
+  'scrollTop': $target.offset().top
+ }, 900, 'swing', function () {
+  window.location.hash = target;
+ });
+});
+
+<!-- Navigation bar ende -->
+
+<!-- Parallax Bilder und Content-->
+	</script>
+
+	<div class="ParallaxVideo" id="home">
+	  <video autoplay muted loop>
+	  <source src="media/trailerproto.mp4" type="video/mp4">
+	  </video>
+	</div>
+
+	<div class="ParallaxContent" id="multiplayer">
+	<div class="container">
+	<div class="headlines">
+	<h3>Multiplayer</h3>
+	<p>Ein neues strategisches Mehrspieler Erlebnis</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+	<div class="ParallaxImage bg1" >
+				<div class="container">
+
+	 			</div>
+	</div>
+
+	<div class="ParallaxContent">
+	<div class="container">
+	<div class="headlines">
+	<p>10 brandneue Spezialisten</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+	<div class="ParallaxImage bg2" >
+	  <div class="container">
+
+	 	</div>
+	</div>
+
+	<div class="ParallaxContent" id="zombies">
+	<div class="container">
+	<div class="headlines">
+	<h3>Zombies</h3>
+	<p>3 neue Zombiekampagnen</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+
+	<div class="ParallaxImage bg3" >
+	  <div class="container">
+
+			</a>
+	 	</div>
+	</div>
+
+	<div class="ParallaxContent" id="blackout">
+	<div class="container">
+	<div class="headlines">
+	<h3>Blackout</h3>
+	<p>Battleroyale in Call of Duty</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+	<div class="ParallaxImage bg4">
+		<div class="container">
+
+		</div>
+	</div>
+<!-- Parallax Bilder und Content ende-->
+</body>
+</html>

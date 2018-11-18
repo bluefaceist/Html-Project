@@ -1,0 +1,185 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-Family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  /*test*/
+
+
+
+
+  /*test ende*/
+}
+
+/*-----------*/
+.ParallaxImage {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  opacity: 0.8;
+}
+.ParallaxImage h1 {
+  font-weight: 700;
+  font-size: 76px;
+  text-align: center;
+  text-transform: uppercase;
+  color:black;
+}
+.bg1 {
+  background-image: url("../media/BO4-Home-Hero-Background.jpg");
+  min-height:800px;
+  opacity: 0.8;
+}
+
+.bg2 {
+  background-image: url("../media/selectionspecialist.png");
+  min-height:800px;
+  opacity: 0.8;
+}
+
+.bg3 {
+  background-image: url("../media/zombiesBo4.jpg");
+  min-height:800px;
+  opacity: 0.8;
+}
+
+.bg4 {
+  background-image: url("../media/Firebreak.png");
+  min-height:800px;
+  opacity: 0.70;
+}
+
+.ParallaxContent {
+  background: none repeat scroll 0 0 black;
+  padding: 40px 0;
+  color:orange;
+  text-align: center;
+}
+.ParallaxContent h2{
+	color:orange;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ParallaxContent h3{
+	color:orange;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ParallaxContent p{
+	color:orange;
+  padding-bottom: 15px;
+  font-size:17px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+
+.ParallaxVideo{
+height: 100%;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+.ParallaxVideo video{
+min-width: 100%;
+position: fixed;
+top:0;
+z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: black;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*----------*/
+.fullscreen-bg{
+  width:100%;
+  position:relative;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-color:black;
+
+  background-attachment:fixed;
+
+}
+
+
+
+.ping1, .ping2, .ping3, .ping4, .ping5{
+  postition:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:auto;
+  background-repeat:no-repeat;
+
+
+  background-attachment:fixed;
+}
+
+.ping1{
+  background-image:url('../media/BO4_Cover_Art_1080p.png');
+  min-height:100%;
+}
+
+.ping2{
+  background-image:url('../media/BO4-Home-Hero-Background.jpg');
+  min-height:800px;
+}
+
+.ping3{
+  background-image:url('../media/selectionspecialist.png');
+  min-height:800px;
+  background-size: cover;
+}
+/*Neuer Teil */
+.ping4{
+background-image:url('../media/zombiesBo4.jpg');
+min-height:800px;
+}
+
+.ping5{
+background-image:url('../media/Firebreak.png');
+min-height:800px;
+
+}
+/*Neuer Teil ende*/
+.section{
+  text-align:center;
+  padding:50px 50px;
+  /*test*/
+
+
+  /*test ende*/
+}
+
+.section-dark{
+  background-color:black;
+  color:orange;
+  height: 20px;
+
+
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}

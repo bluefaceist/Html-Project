@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" "viewport" content ="width=device-width, user -scaleable=no" />
+	<meta name="description" content="Der Mehrspieler-Modus von Call of Duty®: Black Ops 4 setzt neue Maßstäbe - mit dem packendsten und realistischsten Kampferlebnis, das es je gab und ...">
+	<meta name="keywords" content="Call of Duty, Black Ops 4, Ego-Shooter, Multiplayer, Strategy">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Internet Explorer neuste Renderengine -->
+  <title>Call of Duty Black Ops 4</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/navbar.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
+
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  Muss noch geändert werden um offline verfübar zu sein -->
+	<link rel="stylesheet" href="bootstrap/Navbar.min.css">
+	<link rel="stylesheet" href="font-awesome.min.ss">
+	<link rel="icon" href="media/bo4_tab_icon.png">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script scr="js/script.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+
+
+</head>
+<body>
+<!-- Navigation bar -->
+	<div class="wrapper">
+				<header>
+
+							<nav>
+
+										<div class="menu-icon">
+													<i class="fa fa-bars fa-2x"></i>
+										</div>
+
+										<div class="logo">
+											<img src="media/black-ops-4_logo_klein.png">
+
+
+										</div>
+
+										<div class="menu">
+													<ul>
+																<li><a id = "homelink" href="#home"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Home</a></li>
+																<li><a id = "multiplayerlink" href="#multiplayer"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Multiplayer</a></li>
+																<li><a id = "zombieslink" href="#zombies"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Zombies</a></li>
+																<li><a id = "blackoutlink" href="#blackout"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Blackout</a></li>
+																<li><a id = "buylink" href="#buy"class="w3-bar-item w3-hover-none w3-bottombar w3-hover-border-black">Buy</a></li>
+													</ul>
+										</div>
+							</nav>
+
+				</header>
+
+
+	</div>
+
+	<script type="text/javascript">
+
+	// Menu-toggle button
+
+	$(document).ready(function() {
+				$(".menu-icon").on("click", function() {
+							$("nav ul").toggleClass("showing");
+				});
+	});
+
+	// Scrolling Effect
+
+	$(window).on("scroll", function() {
+				if($(window).scrollTop()) {
+							$('nav').addClass('black');
+				}
+
+				else {
+							$('nav').removeClass('black');
+				}
+	})
+//Auto Scroll
+$('a[href*="#"]').on('click',function(e) {
+ e.preventDefault();
+ var target = this.hash;
+ var $target = $(target);
+ $('html, body').stop().animate({
+  'scrollTop': $target.offset().top
+ }, 900, 'swing', function () {
+  window.location.hash = target;
+ });
+});
+<!-- Für ein Faden von classen -->
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".item1,.flexcontent").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(100,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(100,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+<!-- text -->
+
+<!-- Navigation bar ende -->
+
+<!-- Overlay -->
+function openNav() {
+  document.getElementById("overlay").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav() {
+  document.getElementById("overlay").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav2() {
+  document.getElementById("overlay2").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav2() {
+  document.getElementById("overlay2").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav3() {
+  document.getElementById("overlay3").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav3() {
+  document.getElementById("overlay3").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav4() {
+  document.getElementById("overlay4").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav4() {
+  document.getElementById("overlay4").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav5() {
+  document.getElementById("overlay5").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav5() {
+  document.getElementById("overlay5").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav6() {
+  document.getElementById("overlay6").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav6() {
+  document.getElementById("overlay6").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav7() {
+  document.getElementById("overlay7").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav7() {
+  document.getElementById("overlay7").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav8() {
+  document.getElementById("overlay8").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav8() {
+  document.getElementById("overlay8").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav9() {
+  document.getElementById("overlay9").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav9() {
+  document.getElementById("overlay9").style.width = "0%";
+	$('nav').addClass('black');
+}
+function openNav10() {
+  document.getElementById("overlay10").style.width = "100%";
+	$('nav').removeClass('black');
+}
+function closeNav10() {
+  document.getElementById("overlay10").style.width = "0%";
+	$('nav').addClass('black');
+}
+<!-- Disable Scroll damit im Overlay nicht der Hintergrund gescrollt wird-->
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
+}
+
+<!--Overlay für contentboxen-->
+function mapoverlayon() {
+  document.getElementById("mapoverlay").style.display = "block";
+}
+function mapoverlayoff() {
+  document.getElementById("mapoverlay").style.display = "none";
+}
+
+
+function mapoverlay2on() {
+  document.getElementById("mapoverlay2").style.display = "block";
+}
+function mapoverlay2off() {
+  document.getElementById("mapoverlay2").style.display = "none";
+}
+
+
+function mapoverlay3on() {
+  document.getElementById("mapoverlay3").style.display = "block";
+}
+function mapoverlay3off() {
+  document.getElementById("mapoverlay3").style.display = "none";
+}
+
+
+function mapoverlay4on() {
+  document.getElementById("mapoverlay4").style.display = "block";
+}
+function mapoverlay4off() {
+  document.getElementById("mapoverlay4").style.display = "none";
+}
+
+
+function mapoverlay5on() {
+  document.getElementById("mapoverlay5").style.display = "block";
+}
+function mapoverlay5off() {
+  document.getElementById("mapoverlay5").style.display = "none";
+}
+
+
+
+
+	</script>
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Feb 27, 2019 15:37:25").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get todays date and time
+	  var now = new Date().getTime();
+
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  // Output the result in an element with id="demo"
+	  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+
+	  // If the count down is over, write some text
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("timer").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
+
+<!-- Parallax Bilder und Content-->
+	<div class="ParallaxVideo" id="home">
+	  <video autoplay muted loop>
+	  <source src="media/trailerproto.mp4" type="video/mp4">
+	  </video>
+	</div>
+
+	<div class="ParallaxContent" id="multiplayer">
+	<div class="container">
+	<div class="headlines">
+	<h3>Multiplayer</h3>
+	<p>Ein neues strategisches Mehrspieler Erlebnis</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+<!-- Inhalte Multiplayer -->
+
+	<div class="ParallaxImage bg1">
+				<!-- Overlay1 -->
+		<div id="mapoverlay" onclick="mapoverlayoff()">
+			<div id="mapoverlaycontent">
+				<video autoplay muted loop>
+				<source src="media/map_vid2.mp4" type="video/mp4" id="mapoverlayvideo">
+				</video>
+			</div>
+		</div><!-- Overlay2 -->
+		<div id="mapoverlay2" onclick="mapoverlay2off()">
+			<div id="mapoverlaycontent2">
+
+			</div>
+		</div><!-- Overlay3 -->
+		<div id="mapoverlay3" onclick="mapoverlay3off()">
+			<div id="mapoverlaycontent3">
+
+			</div>
+		</div><!-- Overlay4 -->
+		<div id="mapoverlay4" onclick="mapoverlay4off()">
+			<div id="mapoverlaycontent4">
+					<p class="op">Operation endet in </p>
+
+			</div>
+		</div><!-- Overlay5 -->
+		<div id="mapoverlay5" onclick="mapoverlay5off()">
+			<div id="mapoverlaycontent5">
+				<img src="media\absolutezerobanner.png" id="banner" >
+				<a href="https://www.youtube.com/watch?v=0LfEPjqzZSg" target="_newtab"><img src="media\trailer_button.png" id="trailerbutton"/></a>
+				<img src="media\mehr_button.png" id="mehrbutton" href="#">
+				<a href="https://www.callofduty.com/blog" target="_newtab"><img src="media\mehr_button.png" id="mehrbutton"/></a>
+				<p id="op">Operation endet in </p>
+				<p id="timer">Operation Zero</p>
+
+			</div>
+		</div>
+
+			<div class="flexcontent">
+				<div class="flexbild">
+					<img src="media\maps_mp.png" id="placeholder" onclick="mapoverlayon()">
+					<div class="flexoverlay">
+						<div class="flexoverlaytxt">Maps</div>
+					</div>
+				</div>
+				<div class="flexbildtext">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="flexcontent">
+				<div class="flexbild">
+					<img src="media\killstream_mp.png" id="placeholder" onclick="mapoverlay2on()">
+					<div class="flexoverlay">
+						<div class="flexoverlaytxt">Killstreaks</div>
+					</div>
+				</div>
+				<div class="flexbildtext">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="flexcontent">
+				<div class="flexbild">
+					<img src="media\weapon_mp.png" id="placeholder" onclick="mapoverlay3on()">
+					<div class="flexoverlay">
+						<div class="flexoverlaytxt">Waffen</div>
+					</div>
+				</div>
+				<div class="flexbildtext">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="flexcontent">
+				<div class="flexbild">
+					<img src="media\blackmarket_mp.png" id="placeholder" onclick="mapoverlay4on()">
+					<div class="flexoverlay">
+						<div class="flexoverlaytxt">Loot</div>
+					</div>
+				</div>
+				<div class="flexbildtext">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="flexcontent">
+				<div class="flexbild">
+					<img src="media\operation_mp.png" id="placeholder" onclick="mapoverlay5on()">
+					<div class="flexoverlay">
+						<div class="flexoverlaytxt">Operations</div>
+					</div>
+				</div>
+				<div class="flexbildtext">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="ParallaxContent">
+	<div class="container">
+	<div class="headlines">
+	<p>10 brandneue Spezialisten</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+	<div class="ParallaxImage bg2" >
+<!-- Spezialisten Auswahl -->
+	  <div class="container">
+				<a href="#Ajax" onclick="openNav();disableScroll();">
+				<img src="media\specpic\Ajax_Artwork_BO4.jpg" class="item1"  href="#Ajax"></a>
+				<a href="#Battery" onclick="openNav2();disableScroll();">
+				<img src="media\specpic\Battery_Artwork_BO4.jpg" class="item1" href="#Battery"></a>
+				<a href="#Crash" onclick="openNav3();disableScroll();">
+				<img src="media\specpic\Crash_Artwork_BO4.jpg" class="item1" href="#Crash"></a>
+				<a href="#Firebreak" onclick="openNav4();disableScroll();">
+				<img src="media\specpic\Firebreak_Artwork_BO4.jpg" class="item1" href="#Firebreak"></a>
+				<a href="#Nomad" onclick="openNav5();disableScroll();">
+				<img src="media\specpic\Nomad_Artwork_BO4.jpg" class="item1" href="#Nomad"></a>
+				<a href="#Prophet" onclick="openNav6();disableScroll();">
+				<img src="media\specpic\Prophet_Artwork_BO4.jpg" class="item1" href="#Prophet"></a>
+				<a href="#Recon" onclick="openNav7();disableScroll();">
+				<img src="media\specpic\Recon_Artwork_BO4.jpg" class="item1" href="#Recon"></a>
+				<a href="#Ruin" onclick="openNav8();disableScroll();">
+				<img src="media\specpic\Ruin_Artwork_BO4.jpg" class="item1" href="#Ruin"></a>
+				<a href="#Seraph" onclick="openNav9();disableScroll();">
+				<img src="media\specpic\Seraph_Artwork_BO4.jpg" class="item1" href="#Seraph"></a>
+				<a href="#Torque" onclick="openNav10();disableScroll();">
+				<img src="media\specpic\Torque_Artwork_BO4.jpg" class="item1" href="#Torque"></a>
+<!-- Spezialisten Auswahl -->
+
+<!-- Overlay -->
+
+			</div>
+			<div id="overlay" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav();enableScroll();">&times;</a>
+				<div class="overlay-content">
+					<div class="overlayvid">
+					<video autoplay muted loop>
+					<source src="media/specpic/Ajax_vid.mp4" type="video/mp4">
+					</video>
+					</div>
+					<a href="#">Video anschauen</a>
+				</div>
+			</div>
+			<div id="overlay2" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav2();enableScroll();">&times;</a>
+				<div class="overlay-content">
+					<div class="overlayvid">
+					<video autoplay muted loop>
+					<source src="media/specpic/Battery_vid.mp4" type="video/mp4">
+					</video>
+					</div>
+					<a href="#">Video anschauen</a>
+				</div>
+			</div>
+			<div id="overlay3" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav3();enableScroll();">&times;</a>
+					<div class="overlay-content">
+						<div class="overlayvid">
+						<video autoplay muted loop>
+						<source src="media/specpic/Crash_vid.mp4" type="video/mp4">
+						</video>
+						</div>
+						<a href="#">Video anschauen</a>
+					</div>
+			</div>
+				<div id="overlay4" class="overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav4();enableScroll();">&times;</a>
+						<div class="overlay-content">
+							<div class="overlayvid">
+							<video autoplay muted loop>
+							<source src="media/specpic/Firebreak_vid.mp4" type="video/mp4">
+							</video>
+							</div>
+							<a href="#">Video anschauen</a>
+						</div>
+					</div>
+					<div id="overlay5" class="overlay">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav5();enableScroll();">&times;</a>
+							<div class="overlay-content">
+								<div class="overlayvid">
+								<video autoplay muted loop>
+								<source src="media/specpic/Nomad_vid.mp4" type="video/mp4">
+								</video>
+								</div>
+								<a href="#">Video anschauen</a>
+							</div>
+						</div>
+						<div id="overlay6" class="overlay">
+								<a href="javascript:void(0)" class="closebtn" onclick="closeNav6();enableScroll();">&times;</a>
+								<div class="overlay-content">
+									<div class="overlayvid">
+									<video autoplay muted loop>
+									<source src="media/specpic/Prophet_vid.mp4" type="video/mp4">
+									</video>
+									</div>
+									<a href="#">Video anschauen</a>
+								</div>
+							</div>
+							<div id="overlay7" class="overlay">
+									<a href="javascript:void(0)" class="closebtn" onclick="closeNav7();enableScroll();">&times;</a>
+									<div class="overlay-content">
+										<div class="overlayvid">
+										<video autoplay muted loop>
+										<source src="media/specpic/Recon_vid.mp4" type="video/mp4">
+										</video>
+										</div>
+										<a href="#">Video anschauen</a>
+									</div>
+								</div>
+								<div id="overlay8" class="overlay">
+										<a href="javascript:void(0)" class="closebtn" onclick="closeNav8();enableScroll();">&times;</a>
+										<div class="overlay-content">
+											<div class="overlayvid">
+											<video autoplay muted loop>
+											<source src="media/specpic/Ruin_vid.mp4" type="video/mp4">
+											</video>
+											</div>
+											<a href="#">Video anschauen</a>
+										</div>
+									</div>
+									<div id="overlay9" class="overlay">
+											<a href="javascript:void(0)" class="closebtn" onclick="closeNav9();enableScroll();">&times;</a>
+											<div class="overlay-content">
+												<div class="overlayvid">
+												<video autoplay muted loop>
+												<source src="media/specpic/Seraph_vid.mp4" type="video/mp4">
+												</video>
+												</div>
+												<a href="#">Video anschauen</a>
+											</div>
+										</div>
+										<div id="overlay10" class="overlay">
+												<a href="javascript:void(0)" class="closebtn" onclick="closeNav10();enableScroll();">&times;</a>
+												<div class="overlay-content">
+													<div class="overlayvid">
+													<video autoplay muted loop>
+													<source src="media/specpic/Torque_vid.mp4" type="video/mp4">
+													</video>
+													</div>
+													<a href="#">Video anschauen</a>
+												</div>
+											</div>
+<!-- Overlay -->
+	<div class="ParallaxContent" id="zombies">
+	<div class="container">
+	<div class="headlines">
+	<h3>Zombies</h3>
+	<p>3 neue Zombiekampagnen</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+
+	<div class="ParallaxImage bg3" >
+	  <div class="container">
+			<div class="zombieinhalt">
+				<video muted loop controls>
+				<source src="media/ChaosStoryTrailer.mp4" type="video/mp4" id="zombievid">
+				</video>
+			</div>
+	 	</div>
+	</div>
+
+	<div class="ParallaxContent" id="blackout">
+	<div class="container">
+	<div class="headlines">
+	<h3>Blackout</h3>
+	<p>Battleroyale in Call of Duty</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+	<div class="ParallaxImage bg4">
+		<div class="container">
+			<div class="blackoutinhalt">
+				<video muted loop controls>
+				<source src="media/ChaosStoryTrailer.mp4" type="video/mp4" id="blackoutvid">
+				</video>
+			</div>
+		</div>
+	</div>
+
+	<div class="ParallaxContent" id="buy">
+	<div class="container">
+	<div class="headlines">
+	<h3>Jetzt kaufen</h3>
+	<p>Erwerbe ein einzigartiges Erlebnis</p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+
+	<div class="ParallaxImage bg5">
+		<div class="container">
+			<div class="columns">
+  <ul class="preis">
+    <li class="header">Standart</li>
+    <li class="grey">60€</li>
+    <li>Basis Spiel</li>
+    <li>Kein Pass</li>
+    <li>Keine Cod Punkte</li>
+    <li>Keine Boni</li>
+    <li class="grey"><a href="https://www.amazon.de/Call-Duty-Black-Ops-PlayStation/dp/B07BBBVWS5?th=1" class="button">Kaufen</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="preis">
+    <li class="header" style="background-color:orange">Pro</li>
+    <li class="grey">120€</li>
+    <li>Basis Spiel</li>
+    <li>Black Ops Pass</li>
+    <li>1,100 Cod Punkte</li>
+    <li>Bonus Objekte</li>
+    <li class="grey"><a href="https://www.amazon.de/Call-Duty-Black-Ops-PlayStation/dp/B07DPKK6Z7" class="button">Kaufen</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="preis">
+    <li class="header">Pass</li>
+    <li class="grey">60€</li>
+    <li>Kein Basis Spiel</li>
+    <li>Black Ops Pass</li>
+    <li>1,100 Cod Punkte</li>
+    <li>Bonus Objekte</li>
+    <li class="grey"><a href="https://eu.shop.battle.net/de-de/product/call-of-duty-black-ops-pass" class="button">Kaufen</a></li>
+  </ul>
+</div>
+
+
+		</div>
+	</div>
+
+	<div class="ParallaxContent">
+	<div class="container">
+	<div class="headlines">
+	<h3></h3>
+	<p></p>
+	</div>
+	<h3></h3>
+	<p></p>
+	</div>
+	</div>
+	<footer>
+	</footer>
+<!-- Parallax Bilder und Content ende-->
+</body>
+</html>
